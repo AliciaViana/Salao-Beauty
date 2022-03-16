@@ -26,8 +26,13 @@ public class UsuarioServico {
 			System.out.println("o campo email nao pode ficar vazio");
 			return false;
 
+		} else if (usuario.getCpf().length() != 11) {
+			System.out.println("verifique o numero de digitos do seu cpf ");
+			return false;
+
 		} else
 			return true;
+
 	}
 
 }
